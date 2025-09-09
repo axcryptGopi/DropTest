@@ -27,7 +27,11 @@ namespace DropTest.Platforms.MacCatalyst
 
         public override bool CanHandleSession(UIDropInteraction interaction, IUIDropSession session)
         {
-            Console.WriteLine("CanHandleSession fired " + AllowDrop);
+            foreach (var item in session.Items)
+            {
+                foreach (var typeId in item.ItemProvider.RegisteredTypeIdentifiers)
+                    Console.WriteLine($"[Drop] Registered type: {typeId}");
+            }
             return AllowDrop;
         }
         public override void SessionDidEnter(UIDropInteraction interaction, IUIDropSession session)
