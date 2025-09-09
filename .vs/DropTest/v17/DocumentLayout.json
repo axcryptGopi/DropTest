@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Learning\\MAUI\\DropTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F864C295-8717-465F-A8E1-8D7D673A5B19}|DropTest\\DropTest.csproj|d:\\learning\\maui\\droptest\\droptest\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F864C295-8717-465F-A8E1-8D7D673A5B19}|DropTest\\DropTest.csproj|solutionrelative:droptest\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F864C295-8717-465F-A8E1-8D7D673A5B19}|DropTest\\DropTest.csproj|d:\\learning\\maui\\droptest\\droptest\\platforms\\maccatalyst\\dragdrophandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F864C295-8717-465F-A8E1-8D7D673A5B19}|DropTest\\DropTest.csproj|solutionrelative:droptest\\platforms\\maccatalyst\\dragdrophandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F864C295-8717-465F-A8E1-8D7D673A5B19}|DropTest\\DropTest.csproj|d:\\learning\\maui\\droptest\\droptest\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F864C295-8717-465F-A8E1-8D7D673A5B19}|DropTest\\DropTest.csproj|solutionrelative:droptest\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -39,6 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Learning\\MAUI\\DropTest\\DropTest\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "DropTest\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Learning\\MAUI\\DropTest\\DropTest\\MainPage.xaml.cs",
+              "RelativeToolTip": "DropTest\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwCAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T05:02:43.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DragDropHandler.cs",
+              "DocumentMoniker": "D:\\Learning\\MAUI\\DropTest\\DropTest\\Platforms\\MacCatalyst\\DragDropHandler.cs",
+              "RelativeDocumentMoniker": "DropTest\\Platforms\\MacCatalyst\\DragDropHandler.cs",
+              "ToolTip": "D:\\Learning\\MAUI\\DropTest\\DropTest\\Platforms\\MacCatalyst\\DragDropHandler.cs",
+              "RelativeToolTip": "DropTest\\Platforms\\MacCatalyst\\DragDropHandler.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvzAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T05:01:35.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\Learning\\MAUI\\DropTest\\DropTest\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "DropTest\\Components\\Pages\\Home.razor",

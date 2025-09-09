@@ -2,7 +2,7 @@ wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\index.html
-D:\Learning\MAUI\DropTest\DropTest\wwwroot\css\app.css
-D:\Learning\MAUI\DropTest\DropTest\wwwroot\css\bootstrap\bootstrap.min.css
-D:\Learning\MAUI\DropTest\DropTest\wwwroot\css\bootstrap\bootstrap.min.css.map
 D:\Learning\MAUI\DropTest\DropTest\wwwroot\index.html
+D:\Learning\MAUI\DropTest\DropTest\wwwroot\css\bootstrap\bootstrap.min.css.map
+D:\Learning\MAUI\DropTest\DropTest\wwwroot\css\bootstrap\bootstrap.min.css
+D:\Learning\MAUI\DropTest\DropTest\wwwroot\css\app.css
