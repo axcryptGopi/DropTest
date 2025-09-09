@@ -3,12 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DropTest"
              xmlns:components="clr-namespace:DropTest.Components"
+             xmlns:platform="clr-namespace:DropTest.Platforms.MacCatalyst"
              x:Class="DropTest.MainPage">
 
-    <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
-        <BlazorWebView.RootComponents>
-            <RootComponent Selector="#app" ComponentType="{x:Type components:Routes}" />
-        </BlazorWebView.RootComponents>
-    </BlazorWebView>
+    <platform:FileDropBox x:Name="Empty">
 
+    </platform:FileDropBox>
 </ContentPage>

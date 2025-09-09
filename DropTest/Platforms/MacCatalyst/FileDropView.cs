@@ -1,5 +1,6 @@
 ﻿using CoreGraphics;
 using Foundation;
+using MobileCoreServices;
 using ObjCBindings;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,7 @@ namespace DropTest.Platforms.MacCatalyst
         [Export("dropInteraction:sessionDidUpdate:")]
         public UIDropProposal SessionDidUpdate(UIDropInteraction interaction, IUIDropSession session)
         {
-            return new UIDropProposal(UIDropOperation.Copy);
+            return new UIDropProposal(UIDropOperation.Move);
         }
 
         [Export("dropInteraction:performDrop:")]
@@ -40,15 +41,15 @@ namespace DropTest.Platforms.MacCatalyst
         {
             foreach (var item in session.Items)
             {
-                //item.ItemProvider.LoadFileRepresentation(UTType.FileUrl, (url, error) =>
-                //{
-                //    if (url != null)
-                //    {
-                //        var path = url.Path;
-                //        Console.WriteLine($"Dropped file: {path}");
-                //        FileDropped?.Invoke(path);
-                //    }
-                //});
+                item.ItemProvider.LoadFileRepresentation(UTType.PlainText, (url, error) =>
+                {
+                   if (url != null)
+                   {
+                       var path = url.Path;
+                       Console.WriteLine($"Dropped file: {path}");
+                       FileDropped?.Invoke(path);
+                   }
+                });
             }
         }
     }
