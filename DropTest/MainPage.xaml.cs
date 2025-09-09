@@ -2,6 +2,8 @@
 {
     public partial class MainPage : ContentPage
     {
+
+
         public MainPage()
         {
             InitializeComponent();
@@ -39,7 +41,7 @@
 #elif MACCATALYST           
                 Microsoft.Maui.Platform.ContentView nativeView = handler.PlatformView;
 
-                DropTest.Platforms.MacCatalyst.DragDropHandler  handle = new DropTest.Platforms.MacCatalyst.DragDropHandler(nativeView);
+                DropTest.Platforms.MacCatalyst.DragDropHandler handle = new DropTest.Platforms.MacCatalyst.DragDropHandler(nativeView);
                 handle.AllowDrop = true;
 #endif
             });

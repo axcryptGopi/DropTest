@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MobileCoreServices;
 using UIKit;
 
 namespace DropTest.Platforms.MacCatalyst
@@ -27,12 +28,14 @@ namespace DropTest.Platforms.MacCatalyst
 
         public override bool CanHandleSession(UIDropInteraction interaction, IUIDropSession session)
         {
+            String temp = String.Empty;
             foreach (var item in session.Items)
             {
                 foreach (var typeId in item.ItemProvider.RegisteredTypeIdentifiers)
-                    Console.WriteLine($"[Drop] Registered type: {typeId}");
+                    temp += typeId + "\n";
             }
-            return AllowDrop;
+            bool retValue = session.HasConformingItems(new string[] { UTType.PlainText });
+            return retValue;
         }
         public override void SessionDidEnter(UIDropInteraction interaction, IUIDropSession session)
         {
@@ -47,6 +50,11 @@ namespace DropTest.Platforms.MacCatalyst
         public override void PerformDrop(UIDropInteraction interaction, IUIDropSession session)
         {
             Console.WriteLine("PerformDrop fired");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
         }
     }
 
