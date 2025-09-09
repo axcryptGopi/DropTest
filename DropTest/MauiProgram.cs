@@ -25,7 +25,7 @@ namespace DropTest
 #if MACCATALYST
             builder.ConfigureMauiHandlers(handlers =>
             {
-                IMauiHandlersCollection mauiHandlersCollection = handlers.AddHandler(typeof(DropTest.Platforms.MacCatalyst.FileDropBox), typeof(DropTest.Platforms.MacCatalyst.FileDropViewHandler));
+                IMauiHandlersCollection mauiHandlersCollection = handlers.AddHandler(typeof(DropTest.Platforms.MacCatalyst.FileDropBox), typeof(DropTest.Platforms.MacCatalyst.FileDropBoxHandler));
             });
 #endif
             return builder.Build();

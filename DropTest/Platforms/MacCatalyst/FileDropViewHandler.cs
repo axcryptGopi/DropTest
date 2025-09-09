@@ -9,15 +9,23 @@ using UIKit;
 
 namespace DropTest.Platforms.MacCatalyst
 {
-    public class FileDropViewHandler : ViewHandler<FileDropBox, UIView>
+    public class FileDropBoxHandler : ViewHandler<FileDropBox, FileDropView>
     {
-        public FileDropViewHandler(IPropertyMapper mapper, CommandMapper? commandMapper = null) : base(mapper, commandMapper)
+        public static IPropertyMapper<FileDropBox, FileDropBoxHandler> Mapper = new PropertyMapper<FileDropBox, FileDropBoxHandler>(ViewHandler.ViewMapper);
+        public static CommandMapper<FileDropBox, FileDropBoxHandler> CommandMapper = new(ViewHandler.ViewCommandMapper);
+
+        public FileDropBoxHandler() : base(Mapper, CommandMapper)
         {
         }
 
-        protected override UIView CreatePlatformView()
+        protected override FileDropView CreatePlatformView()
         {
-            return new FileDropView(CGRect.Empty);
+            var nativeView = new FileDropView(CGRect.Empty);
+            nativeView.FileDropped += path =>
+            {
+                VirtualView?.RaiseFileDropped(path);
+            };
+            return nativeView;
         }
     }
 }
