@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Learning\\MAUI\\DropTest\\DropTest\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\DropTest.styles.css",
+      "PackagePath": "staticwebassets\\DropTest.styles.css"
+    },
+    {
+      "Id": "D:\\Learning\\MAUI\\DropTest\\DropTest\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Learning\\MAUI\\DropTest\\DropTest\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Learning\\MAUI\\DropTest\\DropTest\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Learning\\MAUI\\DropTest\\DropTest\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.DropTest.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.DropTest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.build.DropTest.props",
+      "PackagePath": "build\\DropTest.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildMultiTargeting.DropTest.props",
+      "PackagePath": "buildMultiTargeting\\DropTest.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildTransitive.DropTest.props",
+      "PackagePath": "buildTransitive\\DropTest.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
