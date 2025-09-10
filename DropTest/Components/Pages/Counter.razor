@@ -25,7 +25,11 @@
                     }
                 }
             }
-        });
+        })
+        {
+            Title = "Hellow World",
+            Id = Guid.NewGuid().ToString()
+        };
         Application.Current.OpenWindow(window);
         currentCount++;
     }
