@@ -7,6 +7,10 @@
              x:Class="DropTest.MainPage">
 
     <BlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <BlazorWebView.GestureRecognizers>
+            <DropGestureRecognizer AllowDrop="True"
+                                   Drop="OnDropGestureRecognizerDrop" />
+        </BlazorWebView.GestureRecognizers>
         <BlazorWebView.RootComponents>
             <RootComponent Selector="#app" ComponentType="{x:Type components:Routes}" />
         </BlazorWebView.RootComponents>
